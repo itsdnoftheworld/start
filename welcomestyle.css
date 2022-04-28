@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+body {
+	font-family: "Consolas", "Arial", sans-serif;
+	font-size: 14px;
+	background: #8dd0fb url("https://wallpaperaccess.com/full/1711593.gif"); /*Replace this with your own background image.*/
+	text-align: center; /*Text is centered by default.*/
+	background-size: cover;
+	background-attachment: fixed;
+  background-position:center;
+
+}
+
+li {
+  text-align: left; /*You can change this, but centered lists can look kind of weird.*/
+  margin-left: 20px
+  }
+
+h1 {
+  font-family:VT323;
+  text-align: center;
+  font-size: 30px;
+  letter-spacing:4px;
+  }
+  
+/*Use as the class of spans or divs you want to have normal left-aligned text.*/
+/*You can combine classes by putting them together with a space, i.e. <div class="box left"> will be a div using "box" and "left" styles.*/
+.left {
+  text-align:left;
+  }
+
+/*A box that stays at a fixed height and scrolls when content gets too long.*/
+.box {
+  margin: 0 auto;
+	overflow: auto;
+	background-color: #fff;
+	border: 2px solid #000;
+	width: 32em;
+	height: 24em;
+	margin-top: 10.5%;
+	padding: 3.5em 4em;
+}
+
+.box-round {
+  margin: 0 auto;
+	background-color: #fff;
+	border: 2px solid #000;
+	width: 32em;
+	height: 24em;
+	margin-top: 7.5%;
+	overflow: auto;
+	padding: 20px;
+	padding-bottom: 30px;	
+	border-radius: 50%;
+	padding: 7.5em 6em;
+}
+
+/*A box that doesn't scroll, instead growing in height.*/
+.box-noscroll {
+  margin: 5% auto 4% auto;
+	background-color: #fff;
+	border: 2px solid #000;
+	width: 32em;
+	padding: 3.5em 4em;
+}
+
+/*Old box attributes. Use if you want an old-style box.*/
+.old {
+	margin-top: 3%;
+	margin-bottom:3%;
+	width: 460px;
+	min-height:50px;
+	padding: 20px;
+	padding-bottom: 30px;	
+  }
+  
+/*Prevent overflow of large images.*/
+.box img, .box-noscroll img, .box-round img {
+  max-width: 100%;
+  height: auto;
+  }
+
+
+/*For narrow screens.*/
+@media (max-width: 500px) {
+  .box, .box-noscroll {
+    width: 85%;
+    }
+  }
+  
+/*Mobile compatibility*/
+@media (orientation: portrait) {
+  .box, .box-noscroll {
+    width: 85%;
+    }
+  }
