@@ -1,18 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=VT323&display=swap');
 body {
 	font-family: "Consolas", "Arial", sans-serif;
 	font-size: 14px;
-	background: #8dd0fb url("https://wallpaperaccess.com/full/1711593.gif"); /*Replace this with your own background image.*/
-	text-align: center; /*Text is centered by default.*/
+	background: #8dd0fb url("https://i.gifer.com/g32K.gif"); 
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 	background-size: cover;
 	background-attachment: fixed;
   background-position:center;
 
 }
 
+ul {list-style:none;
+padding-inline-start: 10px;
+}
+
 li {
-  text-align: left; /*You can change this, but centered lists can look kind of weird.*/
-  margin-left: 20px
+  font-family:Space Mono;
+  font-size: 20px;
+  text-align: left; 
+  letter-spacing:4px;
+  padding-left: 1px;
+  padding-right:8px
   }
 
 h1 {
@@ -21,6 +33,15 @@ h1 {
   font-size: 30px;
   letter-spacing:4px;
   }
+
+.time {
+  font-family: Space Mono; monospace;
+  font-weight:Bold;
+  font-size: 60px;
+  -webkit-text-stroke: 2px orange;
+  color: #06684d;
+	text-shadow: -5px 5px 0px #042e3d , -10px 10px #0ab855, -15px 15px 0px #078f4a, -20px 20px 0px #06684d;
+}
   
 /*Use as the class of spans or divs you want to have normal left-aligned text.*/
 /*You can combine classes by putting them together with a space, i.e. <div class="box left"> will be a div using "box" and "left" styles.*/
@@ -32,46 +53,35 @@ h1 {
 .box {
   margin: 0 auto;
 	overflow: auto;
-	background-color: #fff;
+	background-color:#616E7C;
 	border: 2px solid #000;
 	width: 32em;
 	height: 24em;
-	margin-top: 10.5%;
+	margin-top: 9.5%;
 	padding: 3.5em 4em;
 }
 
-.box-round {
-  margin: 0 auto;
-	background-color: #fff;
-	border: 2px solid #000;
-	width: 32em;
-	height: 24em;
-	margin-top: 7.5%;
-	overflow: auto;
-	padding: 20px;
-	padding-bottom: 30px;	
-	border-radius: 50%;
-	padding: 7.5em 6em;
+.inner-box{
+  display:inline-block;
+  background-color:#042e3d;
+  margin:9.5% 5.5%;
+  height:auto;
+  border: 2px solid #fff;
+  box-shadow: 2px 2px 3px #042e3d;
+  border-radius:8px
 }
 
 /*A box that doesn't scroll, instead growing in height.*/
 .box-noscroll {
-  margin: 5% auto 4% auto;
-	background-color: #fff;
-	border: 2px solid #000;
+  margin: auto auto 4% auto;
+  border-radius:8px;
 	width: 32em;
 	padding: 3.5em 4em;
 }
 
-/*Old box attributes. Use if you want an old-style box.*/
-.old {
-	margin-top: 3%;
-	margin-bottom:3%;
-	width: 460px;
-	min-height:50px;
-	padding: 20px;
-	padding-bottom: 30px;	
-  }
+a{
+ text-decoration:none;
+ color: orange; }
   
 /*Prevent overflow of large images.*/
 .box img, .box-noscroll img, .box-round img {
